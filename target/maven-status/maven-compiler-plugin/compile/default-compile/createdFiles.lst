@@ -1,3 +1,8 @@
+com\ezsolutions\pages\ProductsPage.class
 com\ezsolutions\base\BaseClass.class
 com\ezsolutions\pages\LoginPage.class
-com\ezsolutions\pages\ProductsPage.class
+com\ezsolutions\pages\YourInformationPage.class
+com\ezsolutions\pages\CompletePage.class
+com\ezsolutions\pages\YourCartPage.class
+com\ezsolutions\pages\OverViewPage.class
+com\ezsolutions\utilities\Utils.class

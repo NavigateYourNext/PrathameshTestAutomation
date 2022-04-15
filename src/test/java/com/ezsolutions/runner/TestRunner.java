@@ -11,8 +11,8 @@ import org.testng.annotations.AfterTest;
         ,glue={"com.ezsolutions.stepdefinition"}
         ,plugin = {"pretty",
         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-},
-        tags="@Sanity"
+}
+        //tags="@Functional"
 )
 public class TestRunner{
 

@@ -18,7 +18,7 @@ package com.ezsolutions.base;
         public BaseClass() {
             try {
                 theProperties = new Properties();
-                FileInputStream fis = new FileInputStream("src/test/config.properties");
+                FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
                 theProperties.load(fis);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
