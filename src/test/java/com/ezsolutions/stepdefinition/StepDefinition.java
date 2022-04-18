@@ -88,6 +88,12 @@ public class StepDefinition extends BaseClass{
         theProductsPage.selectMaximumPriceProduct();
     }
 
+    @When("The error message displayed")
+    public void the_error_message_displayed(){
+        boolean result = theLoginPage.checkErrorMessagePresence();
+        Assert.assertTrue(result);
+    }
+
     @Then("User goes to the cart and verifies the added product")
     public void user_goes_to_the_cart_and_verifies_the_added_product() {
         theYourCartPage = theProductsPage.goToShoppingCart();

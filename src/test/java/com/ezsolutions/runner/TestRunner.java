@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
         ,plugin = {"pretty",
         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 }//,
-        //tags="@Sanity1"
+        //tags="@Sanity2"
 )
 public class TestRunner{
 

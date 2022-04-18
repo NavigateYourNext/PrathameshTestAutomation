@@ -28,4 +28,10 @@ Feature: Test SauceDemo Features
     And User gets final message as "THANK YOU FOR YOUR ORDER"
     And User close the browser
 
+    @Sanity2
+    Scenario: Check the error UI message presence
+      Given User must be present on login page
+      When The error message displayed
+      Then User close the browser
+
 

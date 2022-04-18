@@ -49,4 +49,14 @@ public class LoginPage extends BaseClass {
         logger.info("Login page titled as: "+driver.getTitle());
         return driver.getTitle();
     }
+
+    public boolean checkErrorMessagePresence(){
+        if(driver.findElement(errorButton).isDisplayed()){
+            logger.error("Error message present on screen");
+            return false;
+        }else{
+            logger.error("Error message doesn't present on screen");
+            return true;
+        }
+    }
 }
