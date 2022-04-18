@@ -1,6 +1,9 @@
-2022-04-18 16:55:12.132 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_must_be_present_on_login_page(StepDefinition.java:51)] - Browser name is: chrome
-2022-04-18 16:55:14.485 WARN [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:45)] - Chrome has been loaded with Headless options
-2022-04-18 16:55:16.910 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:67)] - Driver navigated to: https://www.saucedemo.com/inventory.html
-2022-04-18 16:55:17.026 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:69)] - Window maximised
-2022-04-18 16:55:17.057 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:72)] - Cookies deleted
-2022-04-18 16:55:17.126 ERROR [main] [com.ezsolutions.pages.LoginPage.checkErrorMessagePresence(LoginPage.java:55)] - Error message present on screen
+2022-04-18 17:09:50.015 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_should_have_sauce_demo_url(StepDefinition.java:29)] - Base url is: https://www.saucedemo.com/inventory.html
+2022-04-18 17:09:50.015 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_should_be_navigated_to_the_sauce_demo_url(StepDefinition.java:34)] - Browser name is: chrome
+2022-04-18 17:09:52.385 WARN [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:45)] - Chrome has been loaded with Headless options
+2022-04-18 17:09:56.023 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:67)] - Driver navigated to: https://www.saucedemo.com/inventory.html
+2022-04-18 17:09:56.155 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:69)] - Window maximised
+2022-04-18 17:09:56.192 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:72)] - Cookies deleted
+2022-04-18 17:09:56.208 INFO [main] [com.ezsolutions.pages.LoginPage.getPageTitle(LoginPage.java:49)] - Login page titled as: Swag Labs
+2022-04-18 17:09:56.208 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.the_page_title_of_login_page_should_be(StepDefinition.java:40)] - Actual page title is: Swag Labs and Excepted page title is: Swag Labs
+2022-04-18 17:09:56.277 INFO [main] [com.ezsolutions.base.BaseClass.closeBrowser(BaseClass.java:78)] - Driver closed successfully
