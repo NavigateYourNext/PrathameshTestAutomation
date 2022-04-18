@@ -2,6 +2,8 @@ package com.ezsolutions.pages;
 
 import com.ezsolutions.base.BaseClass;
 import com.ezsolutions.utilities.Utils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BaseClass {
 
+    private static Logger logger = LogManager.getLogger(LoginPage.class);
     private By username = By.id("user-name");
     private By password = By.id("password");
     private By loginButton = By.id("login-button");
@@ -24,10 +27,12 @@ public class LoginPage extends BaseClass {
 
     public void enterUserName(String thisUsername){
         driver.findElement(username).sendKeys(thisUsername);
+        logger.info("Username entered");
     }
 
     public void enterPassword(String thisPassword){
         driver.findElement(password).sendKeys(thisPassword);
+        logger.info("Password entered");
     }
 
     public ProductsPage clickLoginButton(){
@@ -35,18 +40,13 @@ public class LoginPage extends BaseClass {
                 driver.findElement(errorButton).click();
         }
         driver.findElement(loginButton).click();
+        logger.info("Login button clicked");
         ProductsPage theProductsPage = doLogin();
         return new ProductsPage();
     }
 
     public String getPageTitle(){
+        logger.info("Login page titled as: "+driver.getTitle());
         return driver.getTitle();
     }
-
-
-
-
-
-
-
 }

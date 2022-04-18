@@ -2,14 +2,19 @@ package com.ezsolutions.stepdefinition;
 
 import com.ezsolutions.base.BaseClass;
 import com.ezsolutions.pages.*;
-import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+
+import java.io.File;
 
 public class StepDefinition extends BaseClass{
 
+    private static Logger logger = LogManager.getLogger(StepDefinition.class);
     String baseUrl;
     LoginPage theLoginPage = new LoginPage();
     ProductsPage theProductsPage = new ProductsPage();
@@ -18,24 +23,21 @@ public class StepDefinition extends BaseClass{
     OverViewPage theOverViewPage = new OverViewPage();
     CompletePage theCompletePage = new CompletePage();
 
-
-    /*@After
-    public void closeBrowser(){
-        driver.close();
-    }*/
-
     @Given("User should have SauceDemo url")
     public void user_should_have_sauce_demo_url() {
         baseUrl = theProperties.getProperty("baseUrl");
+        logger.info("Base url is: "+ baseUrl);
     }
     @When("User should be navigated to the SauceDemo url")
     public void user_should_be_navigated_to_the_sauce_demo_url() {
         String browserName = theProperties.getProperty("browserName");
+        logger.info("Browser name is: "+browserName);
         driver = loadWebDriver(browserName);
     }
     @Then("The Page title of login page should be {string}")
     public void the_page_title_of_login_page_should_be(String theExpectedPageTitle) {
         String pageTitle = theLoginPage.getPageTitle();
+        logger.info("Actual page title is: "+pageTitle+" and Excepted page title is: "+theExpectedPageTitle);
         Assert.assertEquals(pageTitle, theExpectedPageTitle);
     }
     @Then("User close the browser")
@@ -46,6 +48,7 @@ public class StepDefinition extends BaseClass{
     @Given("User must be present on login page")
     public void user_must_be_present_on_login_page() {
         String browserName = theProperties.getProperty("browserName");
+        logger.info("Browser name is: "+browserName);
         driver = loadWebDriver(browserName);
     }
     @When("User enters username")
@@ -63,17 +66,20 @@ public class StepDefinition extends BaseClass{
     @Then("User must be on {string} page")
     public void user_must_be_on_page(String theExpectedPageTitle) {
         String pageTitle = theProductsPage.getTitle();
+        logger.info("Actual page title is: "+pageTitle+" and Excepted page title is: "+theExpectedPageTitle);
         Assert.assertEquals(pageTitle, theExpectedPageTitle);
     }
 
     @Given("User must be present on {string} page")
     public void user_must_be_present_on_page(String theExpectedPageTitle) {
         String browserName = theProperties.getProperty("browserName");
+        logger.info("Browser name is: "+browserName);
         driver = loadWebDriver(browserName);
         theLoginPage.enterUserName(theProperties.getProperty("username"));
         theLoginPage.enterPassword(theProperties.getProperty("password"));
         theProductsPage = theLoginPage.clickLoginButton();
         String pageTitle = theProductsPage.getTitle();
+        logger.info("Actual page title is: "+pageTitle+" and Excepted page title is: "+theExpectedPageTitle);
         Assert.assertEquals(pageTitle, theExpectedPageTitle);
 
     }
@@ -108,6 +114,7 @@ public class StepDefinition extends BaseClass{
     @Then("User gets final message as {string}")
     public void user_gets_final_message_as(String theExpectedMessage) {
         String actualMessage = theCompletePage.verifyFinalMessage();
+        logger.info("Actual message is: "+actualMessage+" and Excepted message is: "+theExpectedMessage);
         Assert.assertEquals(actualMessage,theExpectedMessage);
     }
 

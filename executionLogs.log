@@ -1,0 +1,50 @@
+2022-04-18 16:20:20.709 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_should_have_sauce_demo_url(StepDefinition.java:29)] - Base url is: https://www.saucedemo.com/inventory.html
+2022-04-18 16:20:20.709 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_should_be_navigated_to_the_sauce_demo_url(StepDefinition.java:34)] - Browser name is: chrome
+2022-04-18 16:20:22.954 WARN [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:45)] - Chrome has been loaded with Headless options
+2022-04-18 16:20:25.867 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:67)] - Driver navigated to: https://www.saucedemo.com/inventory.html
+2022-04-18 16:20:26.010 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:69)] - Window maximised
+2022-04-18 16:20:26.041 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:72)] - Cookies deleted
+2022-04-18 16:20:26.056 INFO [main] [com.ezsolutions.pages.LoginPage.getPageTitle(LoginPage.java:49)] - Login page titled as: Swag Labs
+2022-04-18 16:20:26.056 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.the_page_title_of_login_page_should_be(StepDefinition.java:40)] - Actual page title is: Swag Labs and Excepted page title is: Swag Labs
+2022-04-18 16:20:26.122 INFO [main] [com.ezsolutions.base.BaseClass.closeBrowser(BaseClass.java:78)] - Driver closed successfully
+2022-04-18 16:20:26.138 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_must_be_present_on_login_page(StepDefinition.java:51)] - Browser name is: chrome
+2022-04-18 16:20:27.631 WARN [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:45)] - Chrome has been loaded with Headless options
+2022-04-18 16:20:29.718 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:67)] - Driver navigated to: https://www.saucedemo.com/inventory.html
+2022-04-18 16:20:29.834 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:69)] - Window maximised
+2022-04-18 16:20:29.865 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:72)] - Cookies deleted
+2022-04-18 16:20:30.017 INFO [main] [com.ezsolutions.pages.LoginPage.enterUserName(LoginPage.java:30)] - Username entered
+2022-04-18 16:20:30.132 INFO [main] [com.ezsolutions.pages.LoginPage.enterPassword(LoginPage.java:35)] - Password entered
+2022-04-18 16:20:30.363 INFO [main] [com.ezsolutions.pages.LoginPage.clickLoginButton(LoginPage.java:43)] - Login button clicked
+2022-04-18 16:20:30.404 INFO [main] [com.ezsolutions.pages.ProductsPage.getTitle(ProductsPage.java:25)] - Product page title as: PRODUCTS
+2022-04-18 16:20:30.425 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_must_be_on_page(StepDefinition.java:69)] - Actual page title is: PRODUCTS and Excepted page title is: PRODUCTS
+2022-04-18 16:20:30.454 INFO [main] [com.ezsolutions.base.BaseClass.closeBrowser(BaseClass.java:78)] - Driver closed successfully
+2022-04-18 16:20:30.469 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_must_be_present_on_page(StepDefinition.java:76)] - Browser name is: chrome
+2022-04-18 16:20:31.968 WARN [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:45)] - Chrome has been loaded with Headless options
+2022-04-18 16:20:34.099 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:67)] - Driver navigated to: https://www.saucedemo.com/inventory.html
+2022-04-18 16:20:34.228 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:69)] - Window maximised
+2022-04-18 16:20:34.260 INFO [main] [com.ezsolutions.base.BaseClass.loadWebDriver(BaseClass.java:72)] - Cookies deleted
+2022-04-18 16:20:34.375 INFO [main] [com.ezsolutions.pages.LoginPage.enterUserName(LoginPage.java:30)] - Username entered
+2022-04-18 16:20:34.459 INFO [main] [com.ezsolutions.pages.LoginPage.enterPassword(LoginPage.java:35)] - Password entered
+2022-04-18 16:20:34.704 INFO [main] [com.ezsolutions.pages.LoginPage.clickLoginButton(LoginPage.java:43)] - Login button clicked
+2022-04-18 16:20:34.763 INFO [main] [com.ezsolutions.pages.ProductsPage.getTitle(ProductsPage.java:25)] - Product page title as: PRODUCTS
+2022-04-18 16:20:34.794 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_must_be_present_on_page(StepDefinition.java:82)] - Actual page title is: PRODUCTS and Excepted page title is: PRODUCTS
+2022-04-18 16:20:34.919 INFO [main] [com.ezsolutions.pages.ProductsPage.getMaximumPrice(ProductsPage.java:47)] - Maximum price of product is: 49.99
+2022-04-18 16:20:34.976 INFO [main] [com.ezsolutions.pages.ProductsPage.selectMaximumPriceProduct(ProductsPage.java:31)] - Maximum price product selected
+2022-04-18 16:20:35.063 INFO [main] [com.ezsolutions.pages.ProductsPage.goToShoppingCart(ProductsPage.java:36)] - Clicked on shopping cart
+2022-04-18 16:20:35.091 INFO [main] [com.ezsolutions.pages.ProductsPage.getMaximumPrice(ProductsPage.java:47)] - Maximum price of product is: 49.99
+2022-04-18 16:20:35.233 INFO [main] [com.ezsolutions.pages.ProductsPage.getMaximumPrice(ProductsPage.java:47)] - Maximum price of product is: 49.99
+2022-04-18 16:20:35.233 INFO [main] [com.ezsolutions.pages.YourCartPage.verifyTheAddedProduct(YourCartPage.java:21)] - Correct product added in shopping cart
+2022-04-18 16:20:35.372 INFO [main] [com.ezsolutions.pages.YourCartPage.checkoutProduct(YourCartPage.java:32)] - Clicked on checkout button
+2022-04-18 16:20:35.465 INFO [main] [com.ezsolutions.pages.YourInformationPage.enterUserPersonalDetails(YourInformationPage.java:23)] - First name entered
+2022-04-18 16:20:35.553 INFO [main] [com.ezsolutions.pages.YourInformationPage.enterUserPersonalDetails(YourInformationPage.java:25)] - Last name entered
+2022-04-18 16:20:35.631 INFO [main] [com.ezsolutions.pages.YourInformationPage.enterUserPersonalDetails(YourInformationPage.java:27)] - Zipcode entered
+2022-04-18 16:20:35.734 INFO [main] [com.ezsolutions.pages.YourInformationPage.enterUserPersonalDetails(YourInformationPage.java:29)] - Clicked on continue button
+2022-04-18 16:20:35.762 INFO [main] [com.ezsolutions.pages.ProductsPage.getMaximumPrice(ProductsPage.java:47)] - Maximum price of product is: 49.99
+2022-04-18 16:20:35.880 INFO [main] [com.ezsolutions.pages.OverViewPage.doCheckoutReview(OverViewPage.java:26)] - Item price as: 49.99
+2022-04-18 16:20:35.880 INFO [main] [com.ezsolutions.pages.OverViewPage.doCheckoutReview(OverViewPage.java:27)] - Tax price as: 4.0
+2022-04-18 16:20:35.880 INFO [main] [com.ezsolutions.pages.OverViewPage.doCheckoutReview(OverViewPage.java:28)] - Total price as: 53.99
+2022-04-18 16:20:35.880 INFO [main] [com.ezsolutions.pages.OverViewPage.doCheckoutReview(OverViewPage.java:31)] - Total price displayed correctly
+2022-04-18 16:20:35.947 INFO [main] [com.ezsolutions.pages.OverViewPage.clickFinishButton(OverViewPage.java:43)] - Finish button clicked
+2022-04-18 16:20:35.985 INFO [main] [com.ezsolutions.pages.CompletePage.verifyFinalMessage(CompletePage.java:21)] - Original message extracted as: THANK YOU FOR YOUR ORDER
+2022-04-18 16:20:35.986 INFO [main] [com.ezsolutions.stepdefinition.StepDefinition.user_gets_final_message_as(StepDefinition.java:117)] - Actual message is: THANK YOU FOR YOUR ORDER and Excepted message is: THANK YOU FOR YOUR ORDER
+2022-04-18 16:20:36.049 INFO [main] [com.ezsolutions.base.BaseClass.closeBrowser(BaseClass.java:78)] - Driver closed successfully

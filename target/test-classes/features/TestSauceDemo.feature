@@ -1,6 +1,6 @@
 Feature: Test SauceDemo Features
 
-  @Sanity
+  @Sanity1
   Scenario: Test login page availability
     Given User should have SauceDemo url
     When  User should be navigated to the SauceDemo url
