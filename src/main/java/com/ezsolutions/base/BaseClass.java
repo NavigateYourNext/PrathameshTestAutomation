@@ -3,7 +3,11 @@ package com.ezsolutions.base;
     import io.github.bonigarcia.wdm.WebDriverManager;
     import org.openqa.selenium.WebDriver;
     import org.openqa.selenium.chrome.ChromeDriver;
+    import org.openqa.selenium.chrome.ChromeOptions;
+    import org.openqa.selenium.firefox.FirefoxBinary;
     import org.openqa.selenium.firefox.FirefoxDriver;
+    import org.openqa.selenium.firefox.FirefoxOptions;
+
     import java.io.FileInputStream;
     import java.io.FileNotFoundException;
     import java.io.IOException;
@@ -31,10 +35,23 @@ package com.ezsolutions.base;
         public static WebDriver loadWebDriver(String browserName){
                if(browserName.equalsIgnoreCase("chrome")){
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    if(theProperties.getProperty("isHidden").equalsIgnoreCase("true")){
+                        ChromeOptions theChromeOptions = new ChromeOptions();
+                        theChromeOptions.addArguments("--headless");
+                        theChromeOptions.addArguments("window-size=1400,800");
+                        driver = new ChromeDriver(theChromeOptions);
+                    }else
+                        driver = new ChromeDriver();
                 }else if(browserName.equalsIgnoreCase("firefox")) {
                    WebDriverManager.firefoxdriver().setup();
-                   driver = new FirefoxDriver();
+                   if(theProperties.getProperty("isHidden").equalsIgnoreCase("true")){
+                       FirefoxBinary firefoxBinary = new FirefoxBinary();
+                       FirefoxOptions options = new FirefoxOptions();
+                       options.setBinary(firefoxBinary);
+                       options.setHeadless(true);
+                       driver = new FirefoxDriver(options);
+                   }else
+                       driver = new FirefoxDriver();
             }else{
                    driver = null;
                }
