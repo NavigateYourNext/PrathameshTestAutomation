@@ -131,26 +131,6 @@
             </includes>
           </configuration>
         </plugin>
-        <!-- <plugin>
-             <groupId>org.apache.maven.plugins</groupId>
-             <artifactId>maven-failsafe-plugin</artifactId>
-             <version>3.0.0-M3</version>
-             <executions>
-                 <execution>
-                     <goals>
-                         <goal>integration-test</goal>
-                     </goals>
-                     <configuration>
-                         <includes>
-                             <include>**/TestRunner.java</include>
-                         </includes>
-                         <parallel>methods</parallel>
-                         <threadCount>4</threadCount>
-                         <perCoreThreadCount>true</perCoreThreadCount>
-                     </configuration>
-                 </execution>
-             </executions>
-         </plugin>-->
       </plugins>
     </build>
 </project>
